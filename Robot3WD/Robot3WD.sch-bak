@@ -1,0 +1,424 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5150 4250 0    50   Input ~ 0
+IN2
+Text GLabel 5150 4350 0    50   Input ~ 0
+IN1
+Text GLabel 5150 4450 0    50   Input ~ 0
+ENA
+$Comp
+L power:GND #PWR0102
+U 1 1 61A779B6
+P 5900 5100
+F 0 "#PWR0102" H 5900 4850 50  0001 C CNN
+F 1 "GND" H 5905 4927 50  0000 C CNN
+F 2 "" H 5900 5100 50  0001 C CNN
+F 3 "" H 5900 5100 50  0001 C CNN
+	1    5900 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 4250 0    50   Input ~ 0
+Trig3
+Text GLabel 1700 4350 0    50   Input ~ 0
+Echo3
+$Comp
+L power:GND #PWR0105
+U 1 1 61ABE21C
+P 1750 4550
+F 0 "#PWR0105" H 1750 4300 50  0001 C CNN
+F 1 "GND" H 1755 4377 50  0000 C CNN
+F 2 "" H 1750 4550 50  0001 C CNN
+F 3 "" H 1750 4550 50  0001 C CNN
+	1    1750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4450 1750 4550
+Wire Wire Line
+	1750 4450 1850 4450
+Wire Wire Line
+	1700 4250 1850 4250
+Wire Wire Line
+	1700 4350 1850 4350
+Text GLabel 1700 5350 0    50   Input ~ 0
+SRx
+Text GLabel 2350 5250 0    50   Input ~ 0
+STx
+$Comp
+L power:GND #PWR0106
+U 1 1 61ADE741
+P 1850 5800
+F 0 "#PWR0106" H 1850 5550 50  0001 C CNN
+F 1 "GND" H 1855 5627 50  0000 C CNN
+F 2 "" H 1850 5800 50  0001 C CNN
+F 3 "" H 1850 5800 50  0001 C CNN
+	1    1850 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 4950 0    50   Input ~ 0
+5v
+Wire Wire Line
+	1700 4950 1850 4950
+Wire Wire Line
+	2350 5250 2500 5250
+Wire Wire Line
+	5300 4450 5150 4450
+Wire Wire Line
+	5150 4350 5300 4350
+Wire Wire Line
+	5300 4250 5150 4250
+Wire Wire Line
+	5800 4850 5800 4900
+Wire Wire Line
+	5800 4900 5900 4900
+Wire Wire Line
+	5900 4900 5900 4850
+Wire Wire Line
+	5900 5100 5900 4900
+Connection ~ 5900 4900
+Wire Wire Line
+	6450 4350 6300 4350
+Wire Wire Line
+	6450 4250 6300 4250
+Text GLabel 6450 4250 2    50   Input ~ 0
+Echo1
+Text GLabel 6450 4350 2    50   Input ~ 0
+Trig1
+$Comp
+L Device:R R1
+U 1 1 61BBC0F7
+P 1850 5150
+F 0 "R1" H 1920 5196 50  0000 L CNN
+F 1 "1k" H 1920 5105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1780 5150 50  0001 C CNN
+F 3 "~" H 1850 5150 50  0001 C CNN
+	1    1850 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61BBED8A
+P 1850 5550
+F 0 "R2" H 1920 5596 50  0000 L CNN
+F 1 "2.2k" H 1920 5505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1780 5550 50  0001 C CNN
+F 3 "~" H 1850 5550 50  0001 C CNN
+	1    1850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5300 1850 5350
+Wire Wire Line
+	1700 5350 1850 5350
+Connection ~ 1850 5350
+Wire Wire Line
+	1850 5350 1850 5400
+Wire Wire Line
+	1850 5700 1850 5750
+Wire Wire Line
+	1850 5750 2450 5750
+Connection ~ 1850 5750
+Wire Wire Line
+	1850 5750 1850 5800
+Wire Wire Line
+	1850 4950 1850 5000
+Wire Wire Line
+	1850 4950 2450 4950
+Wire Wire Line
+	2450 4950 2450 5050
+Wire Wire Line
+	2450 5050 2500 5050
+Connection ~ 1850 4950
+Wire Wire Line
+	2450 5150 2500 5150
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 61AD497A
+P 2700 5150
+F 0 "J7" H 2780 5142 50  0000 L CNN
+F 1 "HC-06" H 2780 5051 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2700 5150 50  0001 C CNN
+F 3 "~" H 2700 5150 50  0001 C CNN
+	1    2700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5150 2450 5750
+Wire Wire Line
+	1850 5350 2500 5350
+Connection ~ 1750 4450
+Wire Wire Line
+	1750 1700 1750 1950
+Wire Wire Line
+	1700 1600 1850 1600
+Text GLabel 6450 4050 2    50   Input ~ 0
+Trig2
+Text GLabel 6450 4150 2    50   Input ~ 0
+Echo2
+Text GLabel 6450 3950 2    50   Input ~ 0
+Trig3
+Text GLabel 6450 3850 2    50   Input ~ 0
+Echo3
+Wire Wire Line
+	6450 3850 6300 3850
+Wire Wire Line
+	6450 3950 6300 3950
+Wire Wire Line
+	6450 4050 6300 4050
+Wire Wire Line
+	6450 4150 6300 4150
+$Comp
+L MCU_Module:Arduino_Nano_v2.x A1
+U 1 1 61B1ACE7
+P 5800 3850
+F 0 "A1" H 5800 2761 50  0000 C CNN
+F 1 "Arduino_Nano_v2.x" H 5800 2670 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5800 3850 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 5800 3850 50  0001 C CNN
+	1    5800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3350 5300 3350
+Wire Wire Line
+	5150 3250 5300 3250
+Wire Wire Line
+	6000 2750 6000 2850
+Wire Wire Line
+	5700 2750 5700 2850
+Wire Wire Line
+	5150 4150 5300 4150
+Wire Wire Line
+	5300 4050 5150 4050
+Wire Wire Line
+	5150 3950 5300 3950
+Wire Wire Line
+	5300 3850 5150 3850
+Wire Wire Line
+	5150 3750 5300 3750
+Wire Wire Line
+	5300 3650 5150 3650
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 61AD0DA9
+P 2050 4250
+F 0 "J6" H 2130 4242 50  0000 L CNN
+F 1 "HC-SR04c" H 2130 4151 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2050 4250 50  0001 C CNN
+F 3 "~" H 2050 4250 50  0001 C CNN
+	1    2050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 61ACFF50
+P 2050 3850
+F 0 "J5" H 2130 3842 50  0000 L CNN
+F 1 "HC-SR04b" H 2130 3751 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2050 3850 50  0001 C CNN
+F 3 "~" H 2050 3850 50  0001 C CNN
+	1    2050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 61ACE4B6
+P 2050 3450
+F 0 "J4" H 2130 3442 50  0000 L CNN
+F 1 "HC-SR04a" H 2130 3351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2050 3450 50  0001 C CNN
+F 3 "~" H 2050 3450 50  0001 C CNN
+	1    2050 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 3750
+Wire Wire Line
+	1800 4150 1800 3750
+Wire Wire Line
+	1850 4150 1800 4150
+Wire Wire Line
+	1800 3350 1850 3350
+Connection ~ 1800 3350
+Wire Wire Line
+	1800 3750 1800 3350
+Wire Wire Line
+	1850 3750 1800 3750
+Wire Wire Line
+	1850 3950 1700 3950
+Wire Wire Line
+	1700 3850 1850 3850
+Wire Wire Line
+	1750 4050 1750 4450
+Connection ~ 1750 4050
+Wire Wire Line
+	1850 4050 1750 4050
+Wire Wire Line
+	1750 3650 1750 4050
+Wire Wire Line
+	1750 3650 1850 3650
+Wire Wire Line
+	1700 3550 1850 3550
+Wire Wire Line
+	1700 3350 1800 3350
+Text GLabel 1700 3350 0    50   Input ~ 0
+5v
+Wire Wire Line
+	1700 3450 1850 3450
+Text GLabel 1700 3950 0    50   Input ~ 0
+Echo2
+Text GLabel 1700 3850 0    50   Input ~ 0
+Trig2
+Text GLabel 1700 3550 0    50   Input ~ 0
+Echo1
+Text GLabel 1700 3450 0    50   Input ~ 0
+Trig1
+Wire Wire Line
+	1850 3100 1750 3100
+Wire Wire Line
+	1850 2900 1750 2900
+Wire Wire Line
+	1850 2700 1750 2700
+Wire Wire Line
+	1850 2500 1750 2500
+Wire Wire Line
+	1750 3000 1850 3000
+Wire Wire Line
+	1750 2800 1850 2800
+Wire Wire Line
+	1750 2600 1850 2600
+Wire Wire Line
+	1750 2400 1850 2400
+Wire Wire Line
+	1750 2300 1850 2300
+Text GLabel 1750 2900 0    50   Input ~ 0
+ENC
+Text GLabel 1750 3000 0    50   Input ~ 0
+IN5
+Text GLabel 1750 3100 0    50   Input ~ 0
+IN6
+Text GLabel 1750 2300 0    50   Input ~ 0
+ENA
+Text GLabel 1750 2400 0    50   Input ~ 0
+IN1
+Text GLabel 1750 2500 0    50   Input ~ 0
+IN2
+Text GLabel 1750 2600 0    50   Input ~ 0
+IN3
+Text GLabel 1750 2700 0    50   Input ~ 0
+IN4
+Text GLabel 1750 2800 0    50   Input ~ 0
+ENB
+Wire Wire Line
+	1850 1700 1750 1700
+$Comp
+L power:GND #PWR0104
+U 1 1 61A8DE93
+P 1750 1950
+F 0 "#PWR0104" H 1750 1700 50  0001 C CNN
+F 1 "GND" H 1755 1777 50  0000 C CNN
+F 2 "" H 1750 1950 50  0001 C CNN
+F 3 "" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 1600 0    50   Input ~ 0
+Vin
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 61A8A8AF
+P 2050 1600
+F 0 "J2" H 2130 1592 50  0000 L CNN
+F 1 "L298N" H 2130 1501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2050 1600 50  0001 C CNN
+F 3 "~" H 2050 1600 50  0001 C CNN
+	1    2050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1150 1750 1250
+Wire Wire Line
+	1850 1150 1750 1150
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61A8617A
+P 2050 1050
+F 0 "J1" H 2130 1042 50  0000 L CNN
+F 1 "Battery" H 2130 951 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2050 1050 50  0001 C CNN
+F 3 "~" H 2050 1050 50  0001 C CNN
+	1    2050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x09 J3
+U 1 1 61A7F967
+P 2050 2700
+F 0 "J3" H 2130 2742 50  0000 L CNN
+F 1 "Motores" H 2130 2651 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 2050 2700 50  0001 C CNN
+F 3 "~" H 2050 2700 50  0001 C CNN
+	1    2050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1050 1350 1050
+Wire Wire Line
+	1750 1050 1850 1050
+$Comp
+L power:GND #PWR0101
+U 1 1 61A752D5
+P 1750 1250
+F 0 "#PWR0101" H 1750 1000 50  0001 C CNN
+F 1 "GND" H 1755 1077 50  0000 C CNN
+F 2 "" H 1750 1250 50  0001 C CNN
+F 3 "" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 1050 0    50   Input ~ 0
+Vin
+$Comp
+L Diode:1N5404 D1
+U 1 1 61A723B8
+P 1600 1050
+F 0 "D1" H 1600 1266 50  0000 C CNN
+F 1 "1N5404" H 1600 1175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P12.70mm_Horizontal" H 1600 875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 1600 1050 50  0001 C CNN
+	1    1600 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 2750 1    50   Input ~ 0
+Vin
+Text GLabel 6000 2750 1    50   Input ~ 0
+5v
+Text GLabel 5150 3250 0    50   Input ~ 0
+STx
+Text GLabel 5150 3350 0    50   Input ~ 0
+SRx
+Text GLabel 5150 3850 0    50   Input ~ 0
+ENC
+Text GLabel 5150 3750 0    50   Input ~ 0
+IN5
+Text GLabel 5150 3650 0    50   Input ~ 0
+IN6
+Text GLabel 5150 4150 0    50   Input ~ 0
+IN3
+Text GLabel 5150 4050 0    50   Input ~ 0
+IN4
+Text GLabel 5150 3950 0    50   Input ~ 0
+ENB
+$EndSCHEMATC
