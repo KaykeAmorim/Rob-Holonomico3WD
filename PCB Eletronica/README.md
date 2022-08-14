@@ -2,8 +2,8 @@
 
 - ***Robot3WD.sch***: Arquivo do Diagrama Esquemático Eletrônico.
 
-![](https://github.com/KaykeAmorim/Rob-Holonomico3WD/tree/main/Images/Esquemático.png)
+![SCH(https://github.com/KaykeAmorim/Rob-Holonomico3WD/blob/main/Images/Esquem%C3%A1tico.png)
 
 - ***Robot3WD.kicad.pcb***: Arquivo da Placa de Circuito Impresso (Printed Circuit Board - PCB)
 
-![](https://github.com/KaykeAmorim/Rob-Holonomico3WD/tree/main/Images/PCB.png)
+![PCB](https://github.com/KaykeAmorim/Rob-Holonomico3WD/blob/main/Images/PCB.png)
