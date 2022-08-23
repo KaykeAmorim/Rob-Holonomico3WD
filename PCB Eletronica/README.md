@@ -4,7 +4,7 @@
 
 Arquivo do Diagrama Esquemático Eletrônico.
 
-![SCH(https://github.com/KaykeAmorim/Rob-Holonomico3WD/blob/main/Images/Esquematico.png)
+![SCH](https://github.com/KaykeAmorim/Rob-Holonomico3WD/blob/main/Images/Esquematico.png)
 
 - ***Robot3WD.kicad.pcb***:
 
